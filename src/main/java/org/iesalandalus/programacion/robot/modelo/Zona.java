@@ -37,6 +37,7 @@ public record Zona(int ancho, int alto) {
         return new Coordenada(centroX, centroY);
     }
 
+    //Nos dice si una coordenada pertenece al la zona actual.
     public boolean pertenece(Coordenada coordenada) {
         if (coordenada == null)
             throw new NullPointerException("La coordenada no puede ser nula.");

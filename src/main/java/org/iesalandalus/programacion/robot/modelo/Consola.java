@@ -91,7 +91,7 @@ public class Consola {
         do {
             System.out.println("Elige una letra para realizar una accion");
             letra = Entrada.caracter();
-        } while (letra != 'A' || letra != 'a' || letra != 'D' || letra != 'd' || letra != 'I' || letra != 'i');
+        } while (letra != 'A' && letra != 'a' && letra != 'D' && letra != 'd' && letra != 'I' && letra != 'i');
         return letra;
     }
     public static void mostrarRobot(Robot robot) {
@@ -99,9 +99,10 @@ public class Consola {
             System.out.println("El robot no puede ser nulo.");
             return;
         }
-        System.out.println(robot);
+        System.out.println(robot.getOrientacion());
+        System.out.println(robot.getCoordenada());
     }
-    public static void Despedirse() {
+    public static void despedirse() {
         System.out.println("Adios.");
     }
 }
